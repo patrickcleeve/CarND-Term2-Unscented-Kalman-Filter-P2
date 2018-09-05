@@ -74,6 +74,8 @@ public:
   long long previous_timestamp_;
 
 
+  MatrixXd H_laser_;
+  MatrixXd R_laser_;
 
 
   /**
