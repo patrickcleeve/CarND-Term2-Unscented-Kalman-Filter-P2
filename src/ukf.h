@@ -73,10 +73,16 @@ public:
   // previous timestamp
   long long previous_timestamp_;
 
-
+  // Lidar Kalman Filter Matrices:
   MatrixXd H_laser_;
-  MatrixXd R_laser_;
 
+  MatrixXd R_laser_;
+  
+
+  // Testing Modes
+  bool testing_initialisation_;
+  bool debug_mode_;
+  bool NIS_testing_;
 
   /**
    * Constructor
